@@ -1,10 +1,13 @@
-
+/* untuk membuat container si card card recommendations */
 const reccommend = document.createElement("div");
 
+/* assign className si container diatas */
 reccommend.className = 'forYou';
 
+/* append container diatas ke dalam HTML kita */
 document.body.appendChild(reccommend);
 
+/* Function untuk membuat tiap cardnya */
 function bagan() {
     const div = document.createElement('div');
     const howMuch = document.getElementsByClassName('card');
