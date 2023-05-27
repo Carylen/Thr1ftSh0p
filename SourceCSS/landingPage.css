@@ -1,0 +1,204 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    scroll-behavior: smooth;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 2vh .5vh;
+}
+
+h1{
+    font-weight: 900;
+}
+
+/* untuk bagian navbar */
+.navbar ul li {
+    display: inline-block;
+    padding: 1.5vh 1vh;
+    margin-left: 1vh;
+    font-size: large;
+    font-weight: 300;
+    transition: all 110ms ease-in-out;
+}
+
+/* untuk animasi garis dibawah tulisan navbar ketika di hover  */
+.navbar ul li::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background-color: black;
+    margin: auto;
+    display: flex;
+    transition: all 350ms ease-in-out;
+}
+
+/* ketika di hover */
+.navbar ul li:hover::after{
+    width: 70%;
+    transition: width 0.3s linear;
+}
+
+a{
+    color: black;
+    transition: all 100ms ease-in-out;
+}
+
+a:hover{
+    color: navy;
+    transition-delay: 50ms;
+}
+
+.searchBar{
+    width: 150px;
+    height: 25px;
+    margin-top: 1%;
+    border: 2px solid rgba(0,0,0,0.2);
+    border-radius: 5px;
+    background-color: rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.detailuser{
+    right: -20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    border-radius: 25px;
+    padding: 5px 10px;
+    cursor:pointer;
+}
+
+.userProfile{
+    height: 40px;
+    width: 40px;
+    background-size: cover;
+    border-radius: 60%;
+}
+
+figcaption{
+    margin-left: 5px;
+    margin-top: 8px;
+}
+
+/* Untuk Highlight Container*/
+.highlight-container{
+    max-width: 1000px;
+    position: absolute;
+    margin: auto;
+}
+
+.mySlides{
+    display: none;
+}
+
+.himage{
+    max-height: 900px;
+    object-fit: contain;
+}
+
+/* Arrow <- , -> in product highlihht*/
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 6px 6px 0;
+    user-select: none;
+    background-color: rgba(0,0,0,0.1);
+}
+
+.next {
+    right: 3%;
+    border-radius: 6px 0 0 6px;
+}
+
+.prev{
+    left: 3%;
+}
+  
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.active:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+/* for figCaption */
+.test{
+    text-align: center;
+    /* display: none; */
+}
+
+/* container for Recommendation 'For you' */
+.forYou{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 5%;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.19);
+}
+
+.card{
+    margin: 2% 1%;
+    border-radius: 5px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.25s ease-in-out;
+}
+
+.card:hover{
+    background-color: rgba(0,0,0,0.05);
+    cursor: pointer;
+}
+
+.catalog{
+    object-fit:cover;
+    width: 150px;
+    height: 190px;
+    /* z-index: 0; */
+}
+
+/* for caption product Catalog like Price IDR n productName */
+.caption{
+    position: absolute;
+    text-align: center;
+    margin-top: -2%;
+    padding-left: 2%;
+}
+
+.price{
+    color: green;
+}
+
+.addOn{
+    margin-top: 18px;
+}
+  
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+}
