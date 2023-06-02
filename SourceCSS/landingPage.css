@@ -27,6 +27,7 @@ h1{
     margin-left: 1vh;
     font-size: large;
     font-weight: 300;
+    font-size: 1.3em;
     transition: all 110ms ease-in-out;
 }
 
@@ -101,7 +102,7 @@ figcaption{
 }
 
 .himage{
-    max-height: 900px;
+    max-height: 500px;
     object-fit: contain;
 }
 
@@ -109,7 +110,7 @@ figcaption{
 .prev, .next {
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    top: 40%;
     width: auto;
     margin-top: -22px;
     padding: 16px;
@@ -154,24 +155,28 @@ figcaption{
 
 /* container for Recommendation 'For you' */
 .forYou{
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 4%;
     justify-content: center;
-    margin: 5%;
-    border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.19);
+    margin: 2%;
+    border-radius: 10px;
+
+    /* background-color: rgba(0, 0, 0, 0.19); */
 }
 
 .card{
-    margin: 2% 1%;
-    border-radius: 5px;
+    width: 20vh;
+    height: 25vh;
+    margin: 2% 2%;
+    border-radius: 15px;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transition: all 0.25s ease-in-out;
 }
 
 .card:hover{
-    background-color: rgba(0,0,0,0.05);
+    background-color: rgba(0,0,0,0.09);
     cursor: pointer;
 }
 
@@ -185,9 +190,9 @@ figcaption{
 /* for caption product Catalog like Price IDR n productName */
 .caption{
     position: absolute;
-    text-align: center;
-    margin-top: -2%;
-    padding-left: 2%;
+    margin-left: 3%;
+    /* margin-top: -2%; */
+    /* padding-left: 2%;  */
 }
 
 .price{
@@ -196,6 +201,28 @@ figcaption{
 
 .addOn{
     margin-top: 18px;
+}
+
+.foot{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(162, 162, 162);
+    height: 25vh;
+    align-items: center;
+    padding: 5%;
+}
+
+.label{
+    height: 5vh;
+    background-color: red;
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+
+.logo{
+    height: 6vh;
 }
   
 @keyframes fade {
