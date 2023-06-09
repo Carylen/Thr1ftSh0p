@@ -17,15 +17,15 @@
     <header class="navbar">
         <img src="/SourceIMG/Logo.png" class="logo">
         <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="#home"><a href="/SourceHTML/landingPage.html">Home</a></a></li>
             <li><a href="#women">Women</a></li>
             <li><a href="#men">Men</a></li>
             <li><a href="#selling">Selling</a></li>
         </ul>
         <input type="text" class="searchBar" placeholder="Search..">
         <figure class="detailuser">
-            <img class="userProfile" src="/SourceIMG/avatar1.jpg">
-            <figcaption><a href="/SourceHTML/loginPage.html">Irham Atmoko</a></figcaption>
+            <a href="/SourceHTML/profileSettings.html"><img class="userProfile" src="/SourceIMG/avatar1.jpg"></a>
+            <!-- <figcaption><a href="/SourceHTML/loginPage.html">Irham Atmoko</a></figcaption> -->
         </figure>
     </header>
     <div class="container-profile">
@@ -79,6 +79,17 @@
                     <input type="text" placeholder="Enter Your Postal Code">
                     <button type="submit" onclick="alert('ur data will be posted.')">Save Changes</button>
                 </div>
+            </div>
+
+            <!-- Ini Container untuk Change Password -->
+            <div class="changePass-container hide">
+                <h4>Email</h4>
+                <input type="email" placeholder="Enter Your Email" required>
+                <h4>Password</h4>
+                <input type="password" placeholder="Enter Your Password">
+                <h4>Confirm Password</h4>
+                <input type="password" placeholder="Enter Your Confirm Password">
+                <button class="save btn2" type="submit" onclick="alert('ur data will be updated.')">Save Changes</button>
             </div>
         </div>
     </div>

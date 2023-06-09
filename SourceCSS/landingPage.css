@@ -59,28 +59,29 @@ a:hover{
 }
 
 .searchBar{
-    width: 150px;
+    width: 250px;
     height: 25px;
     margin-top: 1%;
     border: 2px solid rgba(0,0,0,0.2);
-    border-radius: 5px;
+    border-radius: 15px;
     background-color: rgba(0,0,0,0.1);
     text-align: center;
 }
 
 .detailuser{
     right: -20px;
+    padding: 10px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     border-radius: 25px;
-    padding: 5px 10px;
+    align-items: center;
     cursor:pointer;
 }
 
 .userProfile{
-    height: 40px;
-    width: 40px;
+    height: 50px;
+    width: 50px;
     background-size: cover;
     border-radius: 60%;
 }
@@ -222,7 +223,7 @@ figcaption{
 }
 
 .logo{
-    height: 6vh;
+    height: 5.5vh;
 }
   
 @keyframes fade {
