@@ -1,6 +1,0 @@
-.women-container{
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-    grid-row-gap: 5vh;
-    padding: 15vh;
-}
