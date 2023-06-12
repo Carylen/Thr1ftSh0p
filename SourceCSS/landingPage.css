@@ -161,7 +161,6 @@ figcaption{
     grid-gap: 4%;
     justify-content: center;
     margin: 2%;
-    border-radius: 10px;
 
     /* background-color: rgba(0, 0, 0, 0.19); */
 }
@@ -224,6 +223,26 @@ figcaption{
 
 .logo{
     height: 5.5vh;
+}
+
+.women-container{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 4%;
+    justify-content: center;
+    bottom: 5vh;
+    margin: 2%;
+    border-radius: 10px;
+}
+
+.men-container{
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 4%;
+    justify-content: center;
+    bottom: 5vh;
+    margin: 2%;
+    border-radius: 10px;
 }
   
 @keyframes fade {
