@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
-    <title>Document</title>
+
+    <title>Payment</title>
 </head>
 <body>
     <header class="navbar">
@@ -48,6 +49,8 @@
                     <p>Kota Bekasi, Jawa Barat, 17177</p>
                 </div>
             </div>
+
+            <!-- Masih belum final karna masih aga berantakan ya gaiss, ini untuk detail price dari product kita  -->
             <div class="itemDetail">
                 <h4 style="margin-bottom: 2vh;">Payment Summary</h4>
                 <div class="info">
@@ -63,29 +66,25 @@
                     <p>Rp. 1.500.000</p>
                 </div>
                 <h4 style="margin: 2vh 0vh;">Seller Number</h4>
-                <div class="detailSeller">
-                    <div class="phoneNum">
-                        <p>Pak Hartono</p>
-                        <p>0881567832183</p>
+
+                <div class="paymentInfo">
+                    <!-- Untuk QRCODE rekening seller -->
+                    <div class="bankInfo">
+                        <img src="/SourceIMG/qrcode.png" class="bankInfo">
+                        <figcaption>Bank Central Asia.Tbk</figcaption>
                     </div>
-                    <div class="buyMe">
-                        <a href="/SourceHTML/paymentDetail.html"><button type="submit" class="buy-btn" onclick="payment()">BUY</button></a>
+
+                    <!-- container upload bukti transfer  -->
+                    <div class="paymentProof">
+                        <caption>Upload the proof of payment</caption>             
+                        <i class="fa-solid fa-cloud-arrow-up  fa-4x upload" style="color: white;"></i>   
+                        <button type="submit" class="paid-btn" onclick="alert('ThankYou!!')">PAID</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
-    <div class="description">
-        <h1 style="font-weight: 950; margin-bottom: 2vh;">Description</h1>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-            Impedit ratione laboriosam officiis officia incidunt beatae ullam 
-            ducimus velit iusto, omnis fugiat porro. Ipsum dolorum ab cum dolores 
-            voluptatum beatae ipsa voluptatibus qui ratione, quasi fuga enim error 
-            autem aut accusamus? Tempora, natus repudiandae nostrum earum exercitationem 
-            labore quas rerum consequuntur! Esse expedita aliquid natus perferendis 
-            alias, ullam quod quas. Voluptatum, repudiandae?</p>
-    </div>
-    <source src="/SourceJS/detailProduct.js">
+        <!-- <source src="/SourceJS/cardProduct.js"> -->
+        <script src="https://kit.fontawesome.com/779f43f783.js" crossorigin="anonymous"></script>
 </body>
 </html>

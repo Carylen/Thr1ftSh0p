@@ -6,6 +6,12 @@
     padding: .5vh;
 }
 
+.photoProduct {
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
 .paymentDetail {
     display: flex;
     flex-direction: column;
@@ -64,11 +70,20 @@
 }
 
 .buy-btn {
+    border: solid rgb(101, 99, 99);
     background-color: rgb(101, 99, 99);
     color: white;
     font-weight: bold;
     border-radius: 15px;
     padding: 1vh 6vh;
+    transition: all .95ms ease-in-out ;
+}
+
+.buy-btn:hover {
+    cursor: pointer;
+    border: solid rgb(137, 137, 137);
+    background-color: rgb(137, 137, 137);
+    transform: scaleX(2px);
 }
 
 .total {
@@ -84,4 +99,59 @@
 
 h4 {
     color: gray;
+}
+
+/* Container payment info  */
+.paymentInfo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 5%;
+    margin: 5% 10%;
+}
+
+/* Untuk bagian Info rekening si seller */
+.bankInfo {
+    max-height: 20vh;
+    align-items: center;
+    text-align: center;
+}
+
+/* container si bukti transfer  */
+.paymentProof {
+    max-height: 15vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: .9em;
+    font-weight: 900;
+    margin-top: 5%;
+    /* margin-bottom: 1%; */
+    /* padding: 2vh; */
+}
+
+/* untuk bagian upload bukti transfer */
+.upload {
+    background-color: grey;
+    border-radius: 30px;
+    padding: 25% 0% 25% 23%;
+    margin: 5% 10%; 
+    /* padding-left: 5vh; */
+}
+
+/* btn untuk submit  */
+.paid-btn {
+    border: solid green;
+    border-radius: 15px;
+    background-color: green;
+    color: white;
+    padding: 1%;
+    margin-bottom: 1%;
+    transition: all 0.2ms ease-in-out;
+}
+
+.paid-btn:hover {
+    cursor: pointer;
+    border: solid rgb(91, 150, 1);
+    background-color: rgb(91, 150, 1);
 }
