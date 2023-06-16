@@ -61,6 +61,10 @@
     transition: all 350ms ease-in-out;
 }
 
+.select {
+    width: 70%;
+}
+
 .list ul li:hover::after{
     width: 70%;
     transition: width 0.3s linear;
@@ -116,7 +120,7 @@
     width: 100%;
     height: 4vh;
     border-radius: 10px;
-    background-color: antiquewhite;
+    background-color: rgb(191, 191, 191);
     justify-content: center;
 }
 

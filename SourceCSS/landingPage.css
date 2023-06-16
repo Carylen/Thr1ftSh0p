@@ -104,7 +104,7 @@ figcaption{
 
 .himage{
     max-height: 400px;
-    object-fit: contain;;
+    object-fit: contain;
 }
 
 /* Arrow <- , -> in product highlihht*/
@@ -223,6 +223,17 @@ figcaption{
 
 .logo{
     height: 5.5vh;
+}
+
+.socmed ul{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+}
+
+.socmed ul a {
+    margin: 5%;
 }
 
 .women-container{
