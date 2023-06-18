@@ -45,7 +45,7 @@
     margin-top: 5%;
 }
 
-.list ul li{
+.list ul li {
     display: inline-block;
     cursor: pointer;
     padding-bottom: 2vh ;
@@ -59,10 +59,6 @@
     margin: auto;
     display: flex;
     transition: all 350ms ease-in-out;
-}
-
-.select {
-    width: 70%;
 }
 
 .list ul li:hover::after{

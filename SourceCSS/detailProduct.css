@@ -155,3 +155,27 @@ h4 {
     border: solid rgb(91, 150, 1);
     background-color: rgb(91, 150, 1);
 }
+
+/* Untuk Payment Status */
+.status {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Setiap Statusnya  */
+.success{
+    display: none;
+    margin: 2vh;
+}
+
+.failed{
+    display: none;
+    margin: 2vh;
+}
+
+.waiting{
+    display: none;
+    margin: 2vh;
+}
