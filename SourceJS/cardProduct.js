@@ -1,5 +1,5 @@
 
-
+/* Untuk Element si Trending */
 const cardProduct = () =>{
     let forYou = document.querySelector(".forYou");
     
